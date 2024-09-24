@@ -108,3 +108,4 @@ Manager::~Manager() {
 	products.clear();
 	cout << "Удалил Менеджера :)" << endl;
 }
+

@@ -16,5 +16,3 @@ public:
 	void saveProducts();
 	void loadProducts();
 };
-
-

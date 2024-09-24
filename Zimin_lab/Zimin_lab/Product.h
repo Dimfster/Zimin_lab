@@ -25,3 +25,4 @@ public:
 	friend std::ofstream& operator << (std::ofstream&, Product&);
 };
 
+
