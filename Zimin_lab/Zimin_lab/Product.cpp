@@ -3,7 +3,7 @@
 
 using namespace std;
 
-unsigned int Zimin_Product::MaxId = 0;
+unsigned int Zimin_Product::MaxId = 1;
 static int MAX_PRICE = 10000000;
 
 

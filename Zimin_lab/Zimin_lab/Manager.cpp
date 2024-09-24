@@ -6,17 +6,14 @@ using namespace std;
 
 
 void Zimin_Manager::createZimin_Product() {
-	system("cls");
 	Zimin_Product* p = new Zimin_Product;
 	cin >> *p;
 	products.push_back(p);
 }
 
 void Zimin_Manager::showZimin_Products() {
-	system("cls");
 	if (products.empty()) {
 		cout << "Товаров для просмотра нет!" << endl;
-		system("pause");
 		return;
 	}
 	cout << "Список имеющихся товаров:" << endl;
@@ -24,17 +21,15 @@ void Zimin_Manager::showZimin_Products() {
 		cout << *product << endl;
 	}
 	cout << endl;
-	system("pause");
 }
 
 
 void Zimin_Manager::clearZimin_Products() {
-	system("cls");
 	if (products.empty()) {
 		cout << "Товаров для очистки нет!" << endl;
-		system("pause");
 		return;
 	}
+
 	for (auto product : products) {
 		delete product;
 	}
@@ -42,13 +37,11 @@ void Zimin_Manager::clearZimin_Products() {
 
 	if (products.empty()) {
 		cout << "Товары очищены успешно!" << endl;
-		system("pause");
 		return;
 	}
 }
 
 void Zimin_Manager::saveZimin_Products() {
-	system("cls");
 	if (!products.empty()) {
 		cout << "Введите имя файла сохранения:" << endl;
 		string name = input_string();
@@ -62,11 +55,10 @@ void Zimin_Manager::saveZimin_Products() {
 		file.close();
 		cout << "Успешно сохранено!" << endl; system("pause");
 	}
-	else { cout << "Сохранение не должно быть пустым! Запишите несколько товаров." << endl; system("pause"); }
+	else { cout << "Сохранение не должно быть пустым! Запишите несколько товаров." << endl;}
 }
 
 void Zimin_Manager::loadZimin_Products() {
-	system("cls");
 	ifstream file;
 	std::string path = "Saves\\";
 	vector<filesystem::directory_entry> names;
@@ -79,12 +71,11 @@ void Zimin_Manager::loadZimin_Products() {
 	cout << "Выберите номер файла сохранения" << endl;
 	int save = GetCorrectNumber(1, count);
 
-	products.clear();
-	int count_products;
+	clearZimin_Products();
 
+	int count_products;
 	file.open(names[save - 1]);
 	file >> count_products;
-
 
 	while (count_products--)
 	{
@@ -94,7 +85,6 @@ void Zimin_Manager::loadZimin_Products() {
 	}
 	file.close();
 	cout << "Файл загружен!\n" << endl;
-	system("pause");
 }
 
 Zimin_Manager::Zimin_Manager() {
@@ -102,10 +92,7 @@ Zimin_Manager::Zimin_Manager() {
 }
 
 Zimin_Manager::~Zimin_Manager() {
-	for (auto product : products) {
-		delete product;
-	}
-	products.clear();
+	clearZimin_Products();
 	cout << "Удалил Менеджера :)" << endl;
 }
 

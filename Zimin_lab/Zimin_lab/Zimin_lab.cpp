@@ -20,14 +20,12 @@ int main() {
         cout << "4. Сохранить список товаров" << endl;
         cout << "5. Загрузить список товаров из файла" << endl;
         cout << "0. Выход" << endl;
-
-
         switch (GetCorrectNumber(0, 5)) {
         case 0:
             return 0;
         case 1:
         {
-            m.createZimin_Product();
+            m.createZimin_Product();            
             break;
         }
         case 2:
@@ -47,6 +45,7 @@ int main() {
         default:
             break;
         }
+        system("pause");
     };
 
     return 0;
