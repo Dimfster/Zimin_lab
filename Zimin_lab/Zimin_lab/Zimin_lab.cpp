@@ -9,7 +9,7 @@ using namespace std;
 int main() {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
-    Manager m;
+    Zimin_Manager m;
 
     while (1) {
         system("cls");
@@ -27,22 +27,22 @@ int main() {
             return 0;
         case 1:
         {
-            m.createProduct();
+            m.createZimin_Product();
             break;
         }
         case 2:
-            m.showProducts();
+            m.showZimin_Products();
             break;
         case 3:
-            m.clearProducts();
+            m.clearZimin_Products();
             break;
         case 4:
         {
-            m.saveProducts();
+            m.saveZimin_Products();
             break;
         }
         case 5:
-            m.loadProducts();
+            m.loadZimin_Products();
             break;
         default:
             break;

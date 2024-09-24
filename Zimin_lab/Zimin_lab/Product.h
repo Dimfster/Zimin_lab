@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 
-class Product
+class Zimin_Product
 {
 private:
 	std::string name;
@@ -13,16 +13,16 @@ private:
 	static unsigned int MaxId;
 
 public:
-	Product();
-	~Product();
+	Zimin_Product();
+	~Zimin_Product();
 
-	friend std::istream& operator >> (std::istream&, Product&);
+	friend std::istream& operator >> (std::istream&, Zimin_Product&);
 
-	friend std::ostream& operator << (std::ostream&, Product&);
+	friend std::ostream& operator << (std::ostream&, Zimin_Product&);
 
-	friend std::ifstream& operator >> (std::ifstream&, Product&);
+	friend std::ifstream& operator >> (std::ifstream&, Zimin_Product&);
 
-	friend std::ofstream& operator << (std::ofstream&, Product&);
+	friend std::ofstream& operator << (std::ofstream&, Zimin_Product&);
 };
 
 

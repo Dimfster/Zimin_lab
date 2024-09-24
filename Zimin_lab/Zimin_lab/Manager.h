@@ -2,17 +2,17 @@
 #include <vector>
 #include "Product.h"
 
-class Manager
+class Zimin_Manager
 {
 private:
-	std::vector<Product*> products;
+	std::vector<Zimin_Product*> products;
 public:
-	Manager();
-	~Manager();
+	Zimin_Manager();
+	~Zimin_Manager();
 
-	void createProduct();
-	void showProducts();
-	void clearProducts();
-	void saveProducts();
-	void loadProducts();
+	void createZimin_Product();
+	void showZimin_Products();
+	void clearZimin_Products();
+	void saveZimin_Products();
+	void loadZimin_Products();
 };

@@ -5,14 +5,14 @@
 using namespace std;
 
 
-void Manager::createProduct() {
+void Zimin_Manager::createZimin_Product() {
 	system("cls");
-	Product* p = new Product;
+	Zimin_Product* p = new Zimin_Product;
 	cin >> *p;
 	products.push_back(p);
 }
 
-void Manager::showProducts() {
+void Zimin_Manager::showZimin_Products() {
 	system("cls");
 	if (products.empty()) {
 		cout << "Товаров для просмотра нет!" << endl;
@@ -28,7 +28,7 @@ void Manager::showProducts() {
 }
 
 
-void Manager::clearProducts() {
+void Zimin_Manager::clearZimin_Products() {
 	system("cls");
 	if (products.empty()) {
 		cout << "Товаров для очистки нет!" << endl;
@@ -47,7 +47,7 @@ void Manager::clearProducts() {
 	}
 }
 
-void Manager::saveProducts() {
+void Zimin_Manager::saveZimin_Products() {
 	system("cls");
 	if (!products.empty()) {
 		cout << "Введите имя файла сохранения:" << endl;
@@ -65,7 +65,7 @@ void Manager::saveProducts() {
 	else { cout << "Сохранение не должно быть пустым! Запишите несколько товаров." << endl; system("pause"); }
 }
 
-void Manager::loadProducts() {
+void Zimin_Manager::loadZimin_Products() {
 	system("cls");
 	ifstream file;
 	std::string path = "Saves\\";
@@ -88,7 +88,7 @@ void Manager::loadProducts() {
 
 	while (count_products--)
 	{
-		Product* p = new Product;
+		Zimin_Product* p = new Zimin_Product;
 		file >> *p;
 		products.push_back(p);
 	}
@@ -97,11 +97,11 @@ void Manager::loadProducts() {
 	system("pause");
 }
 
-Manager::Manager() {
+Zimin_Manager::Zimin_Manager() {
 	cout << "Создал Менеджера :)" << endl;
 }
 
-Manager::~Manager() {
+Zimin_Manager::~Zimin_Manager() {
 	for (auto product : products) {
 		delete product;
 	}
