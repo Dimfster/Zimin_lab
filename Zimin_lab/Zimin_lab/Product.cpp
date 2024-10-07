@@ -3,6 +3,9 @@
 
 using namespace std;
 
+BOOST_CLASS_VERSION(Zimin_Product, 1)
+BOOST_CLASS_EXPORT(Zimin_Product)
+
 unsigned int Zimin_Product::MaxId = 1;
 static int MAX_PRICE = 10000000;
 
@@ -15,46 +18,38 @@ Zimin_Product::Zimin_Product() {
 	cout << "Создал продукт :)" << endl;
 }
 
-istream& operator >> (istream& in, Zimin_Product& product) {
+void Zimin_Product::writeInfo() {
 	cout << "Введите название продукта: " << endl;
-	product.name = input_string();
+	name = input_string();
 
 	cout << "Введите производителя продукта: " << endl;
-	product.manufacturer = input_string();
+	manufacturer = input_string();
 
 	cout << "Введите цену продукта: " << endl;
-	product.price = GetCorrectNumber(0, MAX_PRICE);
-
-	return in;
+	price = GetCorrectNumber(0, MAX_PRICE);
 }
 
-ostream& operator << (ostream& out, Zimin_Product& product) {
-	out << "\nТовар ID " << product.id << endl;
-	out << "Название: " << product.name << "\nПроизводитель: " << product.manufacturer <<
-		"\nЦена: " << product.price << endl;
-	return out;
+void Zimin_Product::printInfo() {
+	cout << "\nТовар ID " << id << endl;
+	cout << "Название: " << name << endl 
+		<< "Производитель: " << manufacturer << endl 
+		<<"Цена: " << price << endl;
 }
 
-ifstream& operator >> (ifstream& fin, Zimin_Product& product) {
-	if (fin.is_open()) {
-		fin >> ws;
-		getline(fin, product.name);
-		getline(fin, product.manufacturer);
-		fin >> product.price;
-		fin >> product.id;
-		Zimin_Product::MaxId = (Zimin_Product::MaxId < product.id) ? product.id : Zimin_Product::MaxId;
-	}
-	return fin;
+template<class Archive>
+void Zimin_Product::save(Archive& ar, const unsigned int version) const {
+	ar << name;
+	ar << manufacturer;
+	ar << price;
+	ar << id;
 }
 
-ofstream& operator << (ofstream& fout, Zimin_Product& product) {
-	if (fout.is_open()) {
-		fout << product.name << endl;
-		fout << product.manufacturer << endl;
-		fout << product.price << endl;
-		fout << product.id << endl;
-	}
-	return fout;
+template<class Archive>
+void Zimin_Product::load(Archive& ar, const unsigned int version) {
+	ar >> name;
+	ar >> manufacturer;
+	ar >> price;
+	ar >> id;
 }
 
 Zimin_Product::~Zimin_Product() {

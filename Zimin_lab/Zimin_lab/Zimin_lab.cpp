@@ -1,7 +1,5 @@
-﻿#include <iostream>
-#include "Windows.h"
+﻿#include "Windows.h"
 #include "Utils.h"
-#include "Product.h"
 #include "Manager.h"
 
 using namespace std;
@@ -15,12 +13,13 @@ int main() {
         system("cls");
         cout << "Выберите действие:" << endl;
         cout << "1. Ввести данные о товаре" << endl;
-        cout << "2. Вывести список товаров" << endl;
-        cout << "3. Очистить список товаров" << endl;
-        cout << "4. Сохранить список товаров" << endl;
-        cout << "5. Загрузить список товаров из файла" << endl;
+        cout << "2. Ввести данные о электронике" << endl;
+        cout << "3. Вывести список товаров" << endl;
+        cout << "4. Очистить список товаров" << endl;
+        cout << "5. Сохранить список товаров" << endl;
+        cout << "6. Загрузить список товаров из файла" << endl;
         cout << "0. Выход" << endl;
-        switch (GetCorrectNumber(0, 5)) {
+        switch (GetCorrectNumber(0, 6)) {
         case 0:
             return 0;
         case 1:
@@ -29,17 +28,22 @@ int main() {
             break;
         }
         case 2:
+        {
+            m.createElectronics();
+            break;
+        }
+        case 3:
             m.showZimin_Products();
             break;
-        case 3:
+        case 4:
             m.clearZimin_Products();
             break;
-        case 4:
+        case 5:
         {
             m.saveZimin_Products();
             break;
         }
-        case 5:
+        case 6:
             m.loadZimin_Products();
             break;
         default:

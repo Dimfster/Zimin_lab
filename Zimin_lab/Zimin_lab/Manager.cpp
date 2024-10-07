@@ -1,13 +1,22 @@
 #include "Manager.h"
 #include "Utils.h"
+#include <vector>
+#include <fstream>
 #include <filesystem>
+#include <memory>
 
 using namespace std;
 
 
 void Zimin_Manager::createZimin_Product() {
-	Zimin_Product* p = new Zimin_Product;
-	cin >> *p;
+	shared_ptr<Zimin_Product> p(new Zimin_Product);
+	p->writeInfo();
+	products.push_back(p);
+}
+
+void Zimin_Manager::createElectronics() {
+	shared_ptr<Zimin_Product> p(new Electronics);
+	p->writeInfo();
 	products.push_back(p);
 }
 
@@ -18,7 +27,7 @@ void Zimin_Manager::showZimin_Products() {
 	}
 	cout << "Список имеющихся товаров:" << endl;
 	for (auto product : products) {
-		cout << *product << endl;
+		product->printInfo();
 	}
 	cout << endl;
 }
@@ -29,12 +38,7 @@ void Zimin_Manager::clearZimin_Products() {
 		cout << "Товаров для очистки нет!" << endl;
 		return;
 	}
-
-	for (auto product : products) {
-		delete product;
-	}
 	products.clear();
-
 	if (products.empty()) {
 		cout << "Товары очищены успешно!" << endl;
 		return;
@@ -46,20 +50,22 @@ void Zimin_Manager::saveZimin_Products() {
 		cout << "Введите имя файла сохранения:" << endl;
 		string name = input_string();
 		name = "Saves\\" + name + ".txt";
-		ofstream file;
-		file.open(name, ios::out);
-		file << products.size() << endl;
-		for (auto& product : products) {
-			file << *product;
-		}
-		file.close();
-		cout << "Успешно сохранено!" << endl; system("pause");
+
+		ofstream fout;
+		fout.open(name, ios::out);
+		boost::archive::text_oarchive ar(fout);
+		//ar << products.size();
+		//for (auto product : products){
+		//	ar << product;
+		//}
+		ar << products;
+		fout.close();
+		cout << "Успешно сохранено!" << endl;
 	}
 	else { cout << "Сохранение не должно быть пустым! Запишите несколько товаров." << endl;}
 }
 
 void Zimin_Manager::loadZimin_Products() {
-	ifstream file;
 	std::string path = "Saves\\";
 	vector<filesystem::directory_entry> names;
 	int count = 0;
@@ -73,17 +79,18 @@ void Zimin_Manager::loadZimin_Products() {
 
 	clearZimin_Products();
 
-	int count_products;
-	file.open(names[save - 1]);
-	file >> count_products;
-
-	while (count_products--)
-	{
-		Zimin_Product* p = new Zimin_Product;
-		file >> *p;
-		products.push_back(p);
-	}
-	file.close();
+	ifstream fin;
+	fin.open(names[save - 1]);
+	boost::archive::text_iarchive ar(fin);
+	/*size_t n;*/
+	/*ar >> n;*/
+	//for (int i = 0; i < n; ++i){
+	//	shared_ptr<Zimin_Product> p;
+	//	ar >> p;
+	//	products.push_back(p);
+	//}
+	ar >> products;
+	fin.close();
 	cout << "Файл загружен!\n" << endl;
 }
 
@@ -92,7 +99,7 @@ Zimin_Manager::Zimin_Manager() {
 }
 
 Zimin_Manager::~Zimin_Manager() {
-	clearZimin_Products();
+	//clearZimin_Products();
 	cout << "Удалил Менеджера :)" << endl;
 }
 
