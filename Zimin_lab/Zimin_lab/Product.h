@@ -19,11 +19,17 @@ private:
 	friend class boost::serialization::access;
 
 protected:
-	std::string name;
-	std::string manufacturer;
-	float price;
+	std::string name = "";
+	std::string manufacturer = "";
+	float price = 0;
 	unsigned int id;
 	static unsigned int MaxId;
+
+	template<class Archive>
+	void save(Archive& ar, const unsigned int version) const;
+
+	template<class Archive>
+	void load(Archive& ar, const unsigned int version);
 
 public:
 	BOOST_SERIALIZATION_SPLIT_MEMBER();
@@ -33,10 +39,4 @@ public:
 	virtual void writeInfo();
 
 	virtual void printInfo();
-
-	template<class Archive>
-	void save(Archive& ar, const unsigned int version) const;
-
-	template<class Archive>
-	void load(Archive& ar, const unsigned int version);
 };

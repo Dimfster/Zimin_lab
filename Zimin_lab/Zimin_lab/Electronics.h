@@ -10,9 +10,15 @@ private:
 	friend class boost::serialization::access;
 
 protected:
-	std::string device_type;
-	bool has_battery;
-	double weight;
+	std::string device_type = "";
+	bool has_battery = false;
+	double weight = 0;
+
+	template<class Archive>
+	void save(Archive& ar, const unsigned int version) const;
+
+	template<class Archive>
+	void load(Archive& ar, const unsigned int version);
 
 public:
 	BOOST_SERIALIZATION_SPLIT_MEMBER();
@@ -22,10 +28,4 @@ public:
 	void writeInfo() override;
 
 	void printInfo() override;
-
-	template<class Archive>
-	void save(Archive& ar, const unsigned int version) const;
-
-	template<class Archive>
-	void load(Archive& ar, const unsigned int version);
 };

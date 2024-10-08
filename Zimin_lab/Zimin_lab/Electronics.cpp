@@ -9,7 +9,6 @@ BOOST_CLASS_VERSION(Electronics, 2)
 BOOST_CLASS_EXPORT(Electronics)
 
 Electronics::Electronics() {
-	device_type = "";
 	cout << "Создал Электронику :)" << endl;
 }
 Electronics::~Electronics() {

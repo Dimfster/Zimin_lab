@@ -11,9 +11,6 @@ static int MAX_PRICE = 10000000;
 
 
 Zimin_Product::Zimin_Product() {
-	name = "";
-	manufacturer = "";
-	price = 0;
 	id = MaxId++;
 	cout << "Создал продукт :)" << endl;
 }
