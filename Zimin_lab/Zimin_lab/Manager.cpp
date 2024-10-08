@@ -95,11 +95,11 @@ void Zimin_Manager::loadZimin_Products() {
 }
 
 Zimin_Manager::Zimin_Manager() {
-	cout << "Создал Менеджера :)" << endl;
+	cout << "Менеджер пришёл на работу :)" << endl;
 }
 
 Zimin_Manager::~Zimin_Manager() {
 	//clearZimin_Products();
-	cout << "Удалил Менеджера :)" << endl;
+	cout << "Менеджер ушёл домой :)" << endl;
 }
 
