@@ -1,0 +1,11 @@
+# ninja log v5
+40	239	7519887902106373	Lab_3_Zimin_autogen/timestamp	3c50dc87430f17ab
+253	3534	7519888690090419	CMakeFiles/Lab_3_Zimin.dir/zimin_lab.cpp.obj	20e4c90f9292db3
+40	239	7519887902106373	Lab_3_Zimin_autogen/mocs_compilation.cpp	3c50dc87430f17ab
+501	3922	7519880498443611	CMakeFiles/Lab_3_Zimin.dir/Lab_3_Zimin_autogen/mocs_compilation.cpp.obj	37e03b4fd794fcdb
+40	239	7519887902106373	C:/Qt Projects/Lab_3_Zimin/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/Lab_3_Zimin_autogen/timestamp	3c50dc87430f17ab
+40	239	7519887902106373	C:/Qt Projects/Lab_3_Zimin/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	3c50dc87430f17ab
+247	4153	7519888696258583	CMakeFiles/Lab_3_Zimin.dir/main.cpp.obj	4302bb18cc051d25
+4017	4423	7519880503205833	Lab_3_Zimin.exe	91f4dcce591bacff
+267	2607	7519888680779580	CMakeFiles/Lab_3_Zimin.dir/Electronics.cpp.obj	b106eedfcda0f6a2
+259	2614	7519888680859574	CMakeFiles/Lab_3_Zimin.dir/Product.cpp.obj	57b3bcc3fe936a81
