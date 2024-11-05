@@ -34,6 +34,11 @@ void Zimin_Widget::paintEvent(QPaintEvent *event)
     startY += height;
     manager.draw(&painter, startX, startY, columnsWidth, height);
 
+    auto tableWidth = std::accumulate(columnsWidth.begin(), columnsWidth.end(),
+                                      25 * columnsWidth.size());
+    auto tableHeight = columnsWidth.size() * height;
+    this->resize(tableWidth, tableHeight);
+
 }
 
 void Zimin_Widget::load(const QString& path)

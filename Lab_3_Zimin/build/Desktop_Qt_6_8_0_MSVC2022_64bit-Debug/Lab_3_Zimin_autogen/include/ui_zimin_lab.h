@@ -54,7 +54,7 @@ public:
         verticalLayout->setObjectName("verticalLayout");
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName("scrollArea");
-        scrollArea->setWidgetResizable(true);
+        scrollArea->setWidgetResizable(false);
         ziminWidget = new Zimin_Widget();
         ziminWidget->setObjectName("ziminWidget");
         ziminWidget->setGeometry(QRect(0, 0, 776, 525));
