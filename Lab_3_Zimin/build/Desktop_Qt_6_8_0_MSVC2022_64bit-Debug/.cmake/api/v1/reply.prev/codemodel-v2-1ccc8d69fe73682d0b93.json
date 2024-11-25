@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-808acd643d6b79d9302f.json",
+					"jsonFile" : "directory-.-Debug-8e5c514c51d1e5792f16.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Lab_3_Zimin::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Lab_3_Zimin-Debug-47293be4d92571978b01.json",
+					"jsonFile" : "target-Lab_3_Zimin-Debug-b62d396ad655b72ad9a4.json",
 					"name" : "Lab_3_Zimin",
 					"projectIndex" : 0
 				},

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditDialog</class>
+ <widget class="QDialog" name="EditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>843</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="addProduct">
+       <property name="text">
+        <string>Добавить Product</string>
+       </property>
+       <property name="icon">
+        <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addElectronics">
+       <property name="text">
+        <string>Добавить Electronics</string>
+       </property>
+       <property name="icon">
+        <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_2">
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+       <property name="icon">
+        <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListWidget" name="listWidget"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="labelName">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Название</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditName">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    color: #000000;                /* Цвет текста */
+    background-color: #ecf0f1;     /* Цвет фона */
+    border: 1px solid #a3a3a3;     /* Рамка */
+    border-radius: 5px;            /* Скругление углов */
+    padding: 5px;                  /* Внутренние отступы */
+    font: 14px &quot;Arial&quot;;            /* Шрифт и размер */
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="labelManufacor">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Производитель</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditManufactor">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    color: #000000;                /* Цвет текста */
+    background-color: #ecf0f1;     /* Цвет фона */
+    border: 1px solid #a3a3a3;     /* Рамка */
+    border-radius: 5px;            /* Скругление углов */
+    padding: 5px;                  /* Внутренние отступы */
+    font: 14px &quot;Arial&quot;;            /* Шрифт и размер */
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QLabel" name="labelPrice">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditPrice">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    color: #000000;                /* Цвет текста */
+    background-color: #ecf0f1;     /* Цвет фона */
+    border: 1px solid #a3a3a3;     /* Рамка */
+    border-radius: 5px;            /* Скругление углов */
+    padding: 5px;                  /* Внутренние отступы */
+    font: 14px &quot;Arial&quot;;            /* Шрифт и размер */
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QLabel" name="labelCategory">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Категория</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditCategory">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    color: #000000;                /* Цвет текста */
+    background-color: #ecf0f1;     /* Цвет фона */
+    border: 1px solid #a3a3a3;     /* Рамка */
+    border-radius: 5px;            /* Скругление углов */
+    padding: 5px;                  /* Внутренние отступы */
+    font: 14px &quot;Arial&quot;;            /* Шрифт и размер */
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <item>
+          <widget class="QLabel" name="labelWeight">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Вес</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEditWeight">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    color: #000000;                /* Цвет текста */
+    background-color: #ecf0f1;     /* Цвет фона */
+    border: 1px solid #a3a3a3;     /* Рамка */
+    border-radius: 5px;            /* Скругление углов */
+    padding: 5px;                  /* Внутренние отступы */
+    font: 14px &quot;Arial&quot;;            /* Шрифт и размер */
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="labelBattery">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 2px solid #212526;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Батарея</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBoxBattery">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>-1</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::FocusPolicy::StrongFocus</enum>
+           </property>
+           <property name="toolTip">
+            <UInt>0</UInt>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LayoutDirection::RightToLeft</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QCheckBox {
+    color: #000000;               /* Цвет текста */
+    font: bold 16px Arial;       /* Шрифт и размер */
+    border: 1px solid #a3a3a3;   /* Рамка */
+    border-radius: 5px;          /* Скругление углов */
+	padding: 5px;				 /* Внутренний отступ */
+    background-color: #ecf0f1;   /* Цвет фона */
+}</string>
+           </property>
+           <property name="text">
+            <string>Есть</string>
+           </property>
+           <property name="icon">
+            <iconset theme="QIcon::ThemeIcon::Battery"/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox">
+         <property name="standardButtons">
+          <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EditDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EditDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>549</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

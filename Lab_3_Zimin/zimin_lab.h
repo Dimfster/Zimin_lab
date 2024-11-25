@@ -2,6 +2,7 @@
 #define ZIMIN_LAB_H
 
 #include <QMainWindow>
+#include "pch.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,6 +25,8 @@ private slots:
     void on_actionClear_triggered();
 
     void on_actionSave_triggered();
+
+    void on_actionEdit_triggered();
 
 private:
     Ui::zimin_lab *ui;

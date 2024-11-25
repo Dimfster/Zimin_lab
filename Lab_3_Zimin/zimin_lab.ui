@@ -51,7 +51,14 @@
     <addaction name="actionClear"/>
     <addaction name="actionSave"/>
    </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Редактировать</string>
+    </property>
+    <addaction name="actionEdit"/>
+   </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen">
@@ -67,6 +74,11 @@
   <action name="actionSave">
    <property name="text">
     <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Редактировать</string>
    </property>
   </action>
  </widget>

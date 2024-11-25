@@ -14,9 +14,9 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         main.cpp
-        zimin_lab.cpp
-        zimin_lab.h
-        zimin_lab.ui
+        Zimin_Lab.cpp
+        Zimin_Lab.h
+        Zimin_Lab.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -31,7 +31,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         pch.h
         Manager.h
         Manager.cpp
-        zimin_widget.h zimin_widget.cpp
+        Zimin_Widget.h Zimin_Widget.cpp
+        EditDialog.h EditDialog.cpp EditDialog.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Lab_3_Zimin APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

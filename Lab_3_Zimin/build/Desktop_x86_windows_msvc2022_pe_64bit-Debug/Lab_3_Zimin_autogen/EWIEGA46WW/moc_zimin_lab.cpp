@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'zimin_lab.h'
+** Meta object code from reading C++ file 'Zimin_Lab.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../zimin_lab.h"
+#include "../../../../Zimin_Lab.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'zimin_lab.h' doesn't include <QObject>."
+#error "The header file 'Zimin_Lab.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.8.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -35,7 +35,12 @@ namespace {
 #ifdef QT_MOC_HAS_STRINGDATA
 struct qt_meta_stringdata_CLASSzimin_labENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSzimin_labENDCLASS = QtMocHelpers::stringData(
-    "zimin_lab"
+    "zimin_lab",
+    "on_actionOpen_triggered",
+    "",
+    "on_actionClear_triggered",
+    "on_actionSave_triggered",
+    "on_actionEdit_triggered"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -48,12 +53,24 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSzimin_labENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   38,    2, 0x08,    1 /* Private */,
+       3,    0,   39,    2, 0x08,    2 /* Private */,
+       4,    0,   40,    2, 0x08,    3 /* Private */,
+       5,    0,   41,    2, 0x08,    4 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -66,16 +83,32 @@ Q_CONSTINIT const QMetaObject zimin_lab::staticMetaObject = { {
     nullptr,
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSzimin_labENDCLASS_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<zimin_lab, std::true_type>
+        QtPrivate::TypeAndForceComplete<zimin_lab, std::true_type>,
+        // method 'on_actionOpen_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionClear_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionSave_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_actionEdit_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
 void zimin_lab::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    (void)_o;
-    (void)_id;
-    (void)_c;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<zimin_lab *>(_o);
+        (void)_t;
+        switch (_id) {
+        case 0: _t->on_actionOpen_triggered(); break;
+        case 1: _t->on_actionClear_triggered(); break;
+        case 2: _t->on_actionSave_triggered(); break;
+        case 3: _t->on_actionEdit_triggered(); break;
+        default: ;
+        }
+    }
     (void)_a;
 }
 
@@ -95,6 +128,17 @@ void *zimin_lab::qt_metacast(const char *_clname)
 int zimin_lab::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QMainWindow::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 4)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 4;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 4)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 4;
+    }
     return _id;
 }
 QT_WARNING_POP

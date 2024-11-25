@@ -1,4 +1,4 @@
-#include "zimin_widget.h"
+#include "Zimin_Widget.h"
 
 Zimin_Widget::Zimin_Widget(QWidget *parent)
     : QWidget{parent}
@@ -17,26 +17,15 @@ void Zimin_Widget::paintEvent(QPaintEvent *event)
     QFont font("Arial", 14);
     QFontMetrics fontMetrics(font);
     painter.setFont(font);
-
-    int startX = 20;
-    int startY = 20;
-    int height = 30;
+    painter.setRenderHint(QPainter::Antialiasing, true);
 
     QStringList headers = { "ID", "Название", "Производитель", "Цена", "Категория", "Батарея", "Вес" };
     QVector<int> columnsWidth = getColumnsWidth(&painter, headers);
-    int indentation = 0;
-    for (int col = 0; col < columnsWidth.size(); col++){
-        QRect headerRect(startX + indentation, startY, columnsWidth[col] + 20, height);
-        indentation += columnsWidth[col] + 20;
-        painter.drawRect(headerRect);
-        painter.drawText(headerRect, Qt::AlignCenter, headers[col]);
-    }
-    startY += height;
-    manager.draw(&painter, startX, startY, columnsWidth, height);
+    manager.draw(&painter, columnsWidth, headers);
 
     auto tableWidth = std::accumulate(columnsWidth.begin(), columnsWidth.end(),
                                       25 * columnsWidth.size());
-    auto tableHeight = columnsWidth.size() * height;
+    auto tableHeight = manager.getProducts().size() * (60);
     this->resize(tableWidth, tableHeight);
 
 }

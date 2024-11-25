@@ -1,4 +1,4 @@
-C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/Lab_3_Zimin_autogen/EWIEGA46WW/moc_zimin_lab.cpp: C:/Qt\ Projects/Lab_3_Zimin/zimin_lab.h \
+C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/Lab_3_Zimin_autogen/EWIEGA46WW/moc_Zimin_Lab.cpp: C:/Qt\ Projects/Lab_3_Zimin/Zimin_Lab.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20iterator.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/q20memory.h \

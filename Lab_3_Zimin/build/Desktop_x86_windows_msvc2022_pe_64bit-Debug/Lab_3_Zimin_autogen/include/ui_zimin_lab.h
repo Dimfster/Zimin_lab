@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'zimin_lab.ui'
+** Form generated from reading UI file 'Zimin_Lab.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.8.0
 **
@@ -10,19 +10,33 @@
 #define UI_ZIMIN_LAB_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "zimin_widget.h"
 
 QT_BEGIN_NAMESPACE
 
 class Ui_zimin_lab
 {
 public:
+    QAction *actionOpen;
+    QAction *actionClear;
+    QAction *actionSave;
+    QAction *actionEdit;
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
+    QScrollArea *scrollArea;
+    Zimin_Widget *ziminWidget;
     QMenuBar *menubar;
+    QMenu *menu;
+    QMenu *menu_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *zimin_lab)
@@ -30,16 +44,47 @@ public:
         if (zimin_lab->objectName().isEmpty())
             zimin_lab->setObjectName("zimin_lab");
         zimin_lab->resize(800, 600);
+        actionOpen = new QAction(zimin_lab);
+        actionOpen->setObjectName("actionOpen");
+        actionClear = new QAction(zimin_lab);
+        actionClear->setObjectName("actionClear");
+        actionSave = new QAction(zimin_lab);
+        actionSave->setObjectName("actionSave");
+        actionEdit = new QAction(zimin_lab);
+        actionEdit->setObjectName("actionEdit");
         centralwidget = new QWidget(zimin_lab);
         centralwidget->setObjectName("centralwidget");
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
+        scrollArea = new QScrollArea(centralwidget);
+        scrollArea->setObjectName("scrollArea");
+        scrollArea->setWidgetResizable(false);
+        ziminWidget = new Zimin_Widget();
+        ziminWidget->setObjectName("ziminWidget");
+        ziminWidget->setGeometry(QRect(0, 0, 776, 525));
+        scrollArea->setWidget(ziminWidget);
+
+        verticalLayout->addWidget(scrollArea);
+
         zimin_lab->setCentralWidget(centralwidget);
         menubar = new QMenuBar(zimin_lab);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 800, 26));
+        menu = new QMenu(menubar);
+        menu->setObjectName("menu");
+        menu_2 = new QMenu(menubar);
+        menu_2->setObjectName("menu_2");
         zimin_lab->setMenuBar(menubar);
         statusbar = new QStatusBar(zimin_lab);
         statusbar->setObjectName("statusbar");
         zimin_lab->setStatusBar(statusbar);
+
+        menubar->addAction(menu->menuAction());
+        menubar->addAction(menu_2->menuAction());
+        menu->addAction(actionOpen);
+        menu->addAction(actionClear);
+        menu->addAction(actionSave);
+        menu_2->addAction(actionEdit);
 
         retranslateUi(zimin_lab);
 
@@ -49,6 +94,12 @@ public:
     void retranslateUi(QMainWindow *zimin_lab)
     {
         zimin_lab->setWindowTitle(QCoreApplication::translate("zimin_lab", "zimin_lab", nullptr));
+        actionOpen->setText(QCoreApplication::translate("zimin_lab", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214", nullptr));
+        actionClear->setText(QCoreApplication::translate("zimin_lab", "\320\236\321\207\320\270\321\201\321\202\320\270\321\202\321\214", nullptr));
+        actionSave->setText(QCoreApplication::translate("zimin_lab", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214", nullptr));
+        actionEdit->setText(QCoreApplication::translate("zimin_lab", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
+        menu->setTitle(QCoreApplication::translate("zimin_lab", "\320\244\320\260\320\271\320\273", nullptr));
+        menu_2->setTitle(QCoreApplication::translate("zimin_lab", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
     } // retranslateUi
 
 };

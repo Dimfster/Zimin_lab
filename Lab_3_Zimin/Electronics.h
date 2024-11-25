@@ -15,18 +15,21 @@ protected:
 	bool has_battery = false;
 	double weight = 0;
 
-	template<class Archive>
-	void save(Archive& ar, const unsigned int version) const;
+    template<class Archive>
+    void serialize(Archive& ar, const unsigned int version);
 
-	template<class Archive>
-	void load(Archive& ar, const unsigned int version);
-
-    QStringList getParameters() override;
+    QStringList getParameters() const override;
 
 public:
-    BOOST_SERIALIZATION_SPLIT_MEMBER()
-    Electronics() {};
-    ~Electronics() {};
+    void setCategory(const QString category);
+    void setBattery(bool battery);
+    void setWeight(const float weight);
+
+    Electronics() {}
+    // Electronics(const Electronics& other);
+    virtual ~Electronics() {}
+
+    // std::shared_ptr<Zimin_Product> clone() const override;
 };
 
 #endif

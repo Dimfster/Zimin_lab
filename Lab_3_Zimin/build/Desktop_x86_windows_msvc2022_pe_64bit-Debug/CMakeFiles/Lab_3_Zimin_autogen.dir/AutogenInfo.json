@@ -302,15 +302,27 @@
 			null
 		],
 		[
-			"C:/Qt Projects/Lab_3_Zimin/pch.h",
+			"C:/Qt Projects/Lab_3_Zimin/Zimin_Lab.h",
 			"MU",
-			"EWIEGA46WW/moc_pch.cpp",
+			"EWIEGA46WW/moc_Zimin_Lab.cpp",
 			null
 		],
 		[
-			"C:/Qt Projects/Lab_3_Zimin/zimin_lab.h",
+			"C:/Qt Projects/Lab_3_Zimin/Zimin_Widget.h",
 			"MU",
-			"EWIEGA46WW/moc_zimin_lab.cpp",
+			"EWIEGA46WW/moc_Zimin_Widget.cpp",
+			null
+		],
+		[
+			"C:/Qt Projects/Lab_3_Zimin/editdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_editdialog.cpp",
+			null
+		],
+		[
+			"C:/Qt Projects/Lab_3_Zimin/pch.h",
+			"MU",
+			"EWIEGA46WW/moc_pch.cpp",
 			null
 		]
 	],
@@ -373,6 +385,8 @@
 		[ "C:/Qt Projects/Lab_3_Zimin/Electronics.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/Manager.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/Product.cpp", "MU", null ],
+		[ "C:/Qt Projects/Lab_3_Zimin/Zimin_Widget.cpp", "MU", null ],
+		[ "C:/Qt Projects/Lab_3_Zimin/editdialog.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/main.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/zimin_lab.cpp", "MU", null ]
 	],

@@ -1,4 +1,4 @@
-C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/EWIEGA46WW/moc_Zimin_Widget.cpp: C:/Qt\ Projects/Lab_3_Zimin/Zimin_Widget.h \
+C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/Lab_3_Zimin_autogen/EWIEGA46WW/moc_editdialog.cpp: C:/Qt\ Projects/Lab_3_Zimin/editdialog.h \
   C:/C++\ Libraries/boost_1_86_0/boost/aligned_storage.hpp \
   C:/C++\ Libraries/boost_1_86_0/boost/archive/archive_exception.hpp \
   C:/C++\ Libraries/boost_1_86_0/boost/archive/basic_archive.hpp \
@@ -398,8 +398,6 @@ C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zi
   C:/C++\ Libraries/boost_1_86_0/boost/type_traits/type_with_alignment.hpp \
   C:/C++\ Libraries/boost_1_86_0/boost/utility/enable_if.hpp \
   C:/C++\ Libraries/boost_1_86_0/boost/version.hpp \
-  C:/Qt\ Projects/Lab_3_Zimin/Electronics.h \
-  C:/Qt\ Projects/Lab_3_Zimin/Manager.h \
   C:/Qt\ Projects/Lab_3_Zimin/Product.h \
   C:/Qt\ Projects/Lab_3_Zimin/pch.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtCore/QSize \
@@ -555,7 +553,8 @@ C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zi
   C:/Qt/6.8.0/msvc2022_64/include/QtGui/qtransform.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget \
+  C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QDialog \
+  C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \

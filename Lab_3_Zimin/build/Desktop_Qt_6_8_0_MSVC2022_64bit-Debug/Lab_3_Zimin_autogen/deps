@@ -399,12 +399,17 @@ Lab_3_Zimin_autogen/timestamp: \
 	C:/C++\ Libraries/boost_1_86_0/boost/utility/enable_if.hpp \
 	C:/C++\ Libraries/boost_1_86_0/boost/version.hpp \
 	C:/Qt\ Projects/Lab_3_Zimin/CMakeLists.txt \
+	C:/Qt\ Projects/Lab_3_Zimin/EditDialog.cpp \
+	C:/Qt\ Projects/Lab_3_Zimin/EditDialog.h \
 	C:/Qt\ Projects/Lab_3_Zimin/Electronics.cpp \
 	C:/Qt\ Projects/Lab_3_Zimin/Electronics.h \
 	C:/Qt\ Projects/Lab_3_Zimin/Manager.cpp \
 	C:/Qt\ Projects/Lab_3_Zimin/Manager.h \
 	C:/Qt\ Projects/Lab_3_Zimin/Product.cpp \
 	C:/Qt\ Projects/Lab_3_Zimin/Product.h \
+	C:/Qt\ Projects/Lab_3_Zimin/Zimin_Lab.h \
+	C:/Qt\ Projects/Lab_3_Zimin/Zimin_Widget.cpp \
+	C:/Qt\ Projects/Lab_3_Zimin/Zimin_Widget.h \
 	C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	C:/Qt\ Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
@@ -412,9 +417,6 @@ Lab_3_Zimin_autogen/timestamp: \
 	C:/Qt\ Projects/Lab_3_Zimin/main.cpp \
 	C:/Qt\ Projects/Lab_3_Zimin/pch.h \
 	C:/Qt\ Projects/Lab_3_Zimin/zimin_lab.cpp \
-	C:/Qt\ Projects/Lab_3_Zimin/zimin_lab.h \
-	C:/Qt\ Projects/Lab_3_Zimin/zimin_widget.cpp \
-	C:/Qt\ Projects/Lab_3_Zimin/zimin_widget.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtCore/QSize \
 	C:/Qt/6.8.0/msvc2022_64/include/QtCore/QString \
 	C:/Qt/6.8.0/msvc2022_64/include/QtCore/QVector \
@@ -568,8 +570,10 @@ Lab_3_Zimin_autogen/timestamp: \
 	C:/Qt/6.8.0/msvc2022_64/include/QtGui/qtransform.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QDialog \
 	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/QWidget \
+	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qdialog.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.8.0/msvc2022_64/include/QtWidgets/qtabwidget.h \
@@ -763,5 +767,6 @@ Lab_3_Zimin_autogen/timestamp: \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows-MSVC.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/Windows.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake \
-	C:/Qt\ Projects/Lab_3_Zimin/zimin_lab.ui \
+	C:/Qt\ Projects/Lab_3_Zimin/EditDialog.ui \
+	C:/Qt\ Projects/Lab_3_Zimin/Zimin_Lab.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

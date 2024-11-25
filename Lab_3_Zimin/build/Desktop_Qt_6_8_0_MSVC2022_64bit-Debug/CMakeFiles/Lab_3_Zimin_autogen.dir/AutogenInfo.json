@@ -284,6 +284,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Qt Projects/Lab_3_Zimin/EditDialog.h",
+			"MU",
+			"EWIEGA46WW/moc_EditDialog.cpp",
+			null
+		],
+		[
 			"C:/Qt Projects/Lab_3_Zimin/Electronics.h",
 			"MU",
 			"EWIEGA46WW/moc_Electronics.cpp",
@@ -302,21 +308,21 @@
 			null
 		],
 		[
+			"C:/Qt Projects/Lab_3_Zimin/Zimin_Lab.h",
+			"MU",
+			"EWIEGA46WW/moc_Zimin_Lab.cpp",
+			null
+		],
+		[
+			"C:/Qt Projects/Lab_3_Zimin/Zimin_Widget.h",
+			"MU",
+			"EWIEGA46WW/moc_Zimin_Widget.cpp",
+			null
+		],
+		[
 			"C:/Qt Projects/Lab_3_Zimin/pch.h",
 			"MU",
 			"EWIEGA46WW/moc_pch.cpp",
-			null
-		],
-		[
-			"C:/Qt Projects/Lab_3_Zimin/zimin_lab.h",
-			"MU",
-			"EWIEGA46WW/moc_zimin_lab.cpp",
-			null
-		],
-		[
-			"C:/Qt Projects/Lab_3_Zimin/zimin_widget.h",
-			"MU",
-			"EWIEGA46WW/moc_zimin_widget.cpp",
 			null
 		]
 	],
@@ -376,12 +382,13 @@
 	"SETTINGS_FILE" : "C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/CMakeFiles/Lab_3_Zimin_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Qt Projects/Lab_3_Zimin/EditDialog.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/Electronics.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/Manager.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/Product.cpp", "MU", null ],
+		[ "C:/Qt Projects/Lab_3_Zimin/Zimin_Widget.cpp", "MU", null ],
 		[ "C:/Qt Projects/Lab_3_Zimin/main.cpp", "MU", null ],
-		[ "C:/Qt Projects/Lab_3_Zimin/zimin_lab.cpp", "MU", null ],
-		[ "C:/Qt Projects/Lab_3_Zimin/zimin_widget.cpp", "MU", null ]
+		[ "C:/Qt Projects/Lab_3_Zimin/zimin_lab.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

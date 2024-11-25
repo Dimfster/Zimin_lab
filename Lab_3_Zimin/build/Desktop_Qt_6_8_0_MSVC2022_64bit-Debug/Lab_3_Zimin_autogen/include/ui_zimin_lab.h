@@ -1,5 +1,5 @@
 /********************************************************************************
-** Form generated from reading UI file 'zimin_lab.ui'
+** Form generated from reading UI file 'Zimin_Lab.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.8.0
 **
@@ -29,12 +29,14 @@ public:
     QAction *actionOpen;
     QAction *actionClear;
     QAction *actionSave;
+    QAction *actionEdit;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QScrollArea *scrollArea;
     Zimin_Widget *ziminWidget;
     QMenuBar *menubar;
     QMenu *menu;
+    QMenu *menu_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *zimin_lab)
@@ -48,6 +50,8 @@ public:
         actionClear->setObjectName("actionClear");
         actionSave = new QAction(zimin_lab);
         actionSave->setObjectName("actionSave");
+        actionEdit = new QAction(zimin_lab);
+        actionEdit->setObjectName("actionEdit");
         centralwidget = new QWidget(zimin_lab);
         centralwidget->setObjectName("centralwidget");
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -68,15 +72,19 @@ public:
         menubar->setGeometry(QRect(0, 0, 800, 26));
         menu = new QMenu(menubar);
         menu->setObjectName("menu");
+        menu_2 = new QMenu(menubar);
+        menu_2->setObjectName("menu_2");
         zimin_lab->setMenuBar(menubar);
         statusbar = new QStatusBar(zimin_lab);
         statusbar->setObjectName("statusbar");
         zimin_lab->setStatusBar(statusbar);
 
         menubar->addAction(menu->menuAction());
+        menubar->addAction(menu_2->menuAction());
         menu->addAction(actionOpen);
         menu->addAction(actionClear);
         menu->addAction(actionSave);
+        menu_2->addAction(actionEdit);
 
         retranslateUi(zimin_lab);
 
@@ -89,7 +97,9 @@ public:
         actionOpen->setText(QCoreApplication::translate("zimin_lab", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214", nullptr));
         actionClear->setText(QCoreApplication::translate("zimin_lab", "\320\236\321\207\320\270\321\201\321\202\320\270\321\202\321\214", nullptr));
         actionSave->setText(QCoreApplication::translate("zimin_lab", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214", nullptr));
+        actionEdit->setText(QCoreApplication::translate("zimin_lab", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
         menu->setTitle(QCoreApplication::translate("zimin_lab", "\320\244\320\260\320\271\320\273", nullptr));
+        menu_2->setTitle(QCoreApplication::translate("zimin_lab", "\320\240\320\265\320\264\320\260\320\272\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
     } // retranslateUi
 
 };

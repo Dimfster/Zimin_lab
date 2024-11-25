@@ -9,7 +9,7 @@ unsigned int Zimin_Product::MaxId = 1;
 static int MAX_PRICE = 10000000;
 
 
-QVector<int> Zimin_Product::getColumnWidth(QPainter* painter)
+QVector<int> Zimin_Product::getColumnWidth(QPainter* painter) const
 {
     QStringList data = getParameters();
     QVector<int> widths(data.size(), 0);
@@ -20,7 +20,7 @@ QVector<int> Zimin_Product::getColumnWidth(QPainter* painter)
     return widths;
 }
 
-void Zimin_Product::draw(QPainter *painter, int x, int &y, QVector<int>& column_widths, int height)
+void Zimin_Product::draw(QPainter *painter, int x, int &y, QVector<int>& column_widths, int height) const
 {
     QStringList parameters = getParameters();
     int indentation = 0;
@@ -39,7 +39,20 @@ void Zimin_Product::draw(QPainter *painter, int x, int &y, QVector<int>& column_
     y += height;
 }
 
-QStringList Zimin_Product::getParameters()
+
+void Zimin_Product::setName(const QString name) {
+    this->name = name.toLocal8Bit();
+}
+
+void Zimin_Product::setManufacturer(const QString manufacturer) {
+    this->manufacturer = manufacturer.toLocal8Bit();
+}
+
+void Zimin_Product::setPrice(const float price) {
+    this->price = price;
+}
+
+QStringList Zimin_Product::getParameters() const
 {
     return QStringList({QString::number(id),
                         QString::fromLocal8Bit(name),
@@ -47,25 +60,33 @@ QStringList Zimin_Product::getParameters()
                         QString::number(price)});
 }
 
+
 Zimin_Product::Zimin_Product() {
 	id = MaxId++;
 }
 
+// Zimin_Product::Zimin_Product(const Zimin_Product &other)
+// {
+//     if (this != &other) {  // Проверка на самоприсваивание
+//         id = other.id;
+//         name = other.name;
+//         manufacturer = other.manufacturer;
+//         price = other.price;
+//     }
+// }
+
+
+// std::shared_ptr<Zimin_Product> Zimin_Product::clone() const
+// {
+//     return std::make_shared<Zimin_Product>(*this);
+// }
+
 
 template<class Archive>
-void Zimin_Product::save(Archive& ar, const unsigned int version) const {
-	ar << name;
-	ar << manufacturer;
-	ar << price;
-	ar << id;
+void Zimin_Product::serialize(Archive &ar, const unsigned int version)
+{
+    ar & name;
+    ar & manufacturer;
+    ar & price;
+    ar & id;
 }
-
-template<class Archive>
-void Zimin_Product::load(Archive& ar, const unsigned int version) {
-	ar >> name;
-	ar >> manufacturer;
-	ar >> price;
-	ar >> id;
-}
-
-Zimin_Product::~Zimin_Product() {}

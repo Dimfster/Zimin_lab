@@ -17,6 +17,8 @@ public:
     void save(const QString& path);
     void clear();
     QVector<int> getColumnsWidth(QPainter* painter, const QStringList& headers);
+    void setManager(std::shared_ptr<Zimin_Manager> manager) { this->manager = *manager;}
+    Zimin_Manager& getManager() { return manager; }
 
 signals:
 

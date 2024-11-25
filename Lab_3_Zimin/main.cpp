@@ -1,4 +1,4 @@
-#include "zimin_lab.h"
+#include "Zimin_Lab.h"
 #include "Windows.h"
 #include "Utils.h"
 #include <QApplication>
