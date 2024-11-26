@@ -31,13 +31,13 @@ void Zimin_Manager::loadZimin_Products(string name) {
 
 void Zimin_Manager::createProduct()
 {
-    shared_ptr<Zimin_Product> p(new Zimin_Product);
+    shared_ptr<Zimin_Product> p(new Zimin_Product("Новый продукт", "Неизвестен", 0.0));
     products.push_back(p);
 }
 
 void Zimin_Manager::createElectronic()
 {
-    shared_ptr<Zimin_Product> p(new Electronics);
+    shared_ptr<Zimin_Product> p(new Electronics("Неизвестно", false, 0.0));
     products.push_back(p);
 }
 

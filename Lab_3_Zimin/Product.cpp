@@ -6,7 +6,6 @@ BOOST_CLASS_VERSION(Zimin_Product, 1)
 BOOST_CLASS_EXPORT(Zimin_Product)
 
 unsigned int Zimin_Product::MaxId = 1;
-static int MAX_PRICE = 10000000;
 
 
 QVector<int> Zimin_Product::getColumnWidth(QPainter* painter) const
@@ -62,8 +61,19 @@ QStringList Zimin_Product::getParameters() const
 
 
 Zimin_Product::Zimin_Product() {
-	id = MaxId++;
+    // id = MaxId++;
+    MaxId = id > MaxId ? id : MaxId;
 }
+
+Zimin_Product::Zimin_Product(QString name,QString manufacturer, float price)
+    : id(++MaxId)
+    , name(name.toLocal8Bit())
+    , manufacturer(manufacturer.toLocal8Bit())
+    , price(price)
+{
+  //  MaxId = id > MaxId ? id : MaxId;
+}
+
 
 // Zimin_Product::Zimin_Product(const Zimin_Product &other)
 // {
@@ -89,4 +99,5 @@ void Zimin_Product::serialize(Archive &ar, const unsigned int version)
     ar & manufacturer;
     ar & price;
     ar & id;
+    MaxId = id > MaxId ? id : MaxId;
 }

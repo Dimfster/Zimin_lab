@@ -1,37 +1,49 @@
 # ninja log v5
-48	283	7542232096511104	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-492	8588	7538930587020798	CMakeFiles/Lab_3_Zimin.dir/zimin_lab.cpp.obj	47410f7e3bc26a8e
-48	283	7542232096511104	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-308	6684	7542232164170631	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
-854	5415	7538041076465406	CMakeFiles/Lab_3_Zimin.dir/Lab_3_Zimin_autogen/mocs_compilation.cpp.obj	dfe851d8c511bbae
-48	283	7542232096511104	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+33	180	7543191563349285	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+755	6186	7543187796412669	CMakeFiles/Lab_3_Zimin.dir/zimin_lab.cpp.obj	47410f7e3bc26a8e
+33	180	7543191563349285	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+201	4182	7543189315841803	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+751	5692	7543187791458446	CMakeFiles/Lab_3_Zimin.dir/Lab_3_Zimin_autogen/mocs_compilation.cpp.obj	dfe851d8c511bbae
+33	180	7543191563349285	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
 1521	9370	7531042060235520	CMakeFiles/Lab_3_Zimin.dir/zimin_widget.cpp.obj	a71d99c162062a54
-48	283	7542232096511104	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+33	180	7543191563349285	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
 744	5749	7537913269861761	CMakeFiles/Lab_3_Zimin.dir/main.cpp.obj	7e11be976d083d10
-6685	6986	7542232166664254	Lab_3_Zimin.exe	5d9ae2028bc06d8d
-1232	6722	7537991964547043	CMakeFiles/Lab_3_Zimin.dir/Product.cpp.obj	89eaf095d7c8288b
-1237	6716	7537991964537018	CMakeFiles/Lab_3_Zimin.dir/Electronics.cpp.obj	1d8554a5f03334d9
-1259	6570	7538033714698175	CMakeFiles/Lab_3_Zimin.dir/Manager.cpp.obj	56b16e004bea9cbe
+4182	4367	7543189317522541	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+759	4925	7543187783739185	CMakeFiles/Lab_3_Zimin.dir/Product.cpp.obj	89eaf095d7c8288b
+193	3262	7543189306763192	CMakeFiles/Lab_3_Zimin.dir/Electronics.cpp.obj	1d8554a5f03334d9
+197	3400	7543189308094145	CMakeFiles/Lab_3_Zimin.dir/Manager.cpp.obj	56b16e004bea9cbe
 185	3334	7531182383370312	CMakeFiles/Lab_3_Zimin.dir/editdialog.cpp.obj	44c36b7594e7bd6e
-290	5487	7542229671315211	CMakeFiles/Lab_3_Zimin.dir/Zimin_Widget.cpp.obj	5131f0d21fc38648
+772	5688	7543187791428448	CMakeFiles/Lab_3_Zimin.dir/Zimin_Widget.cpp.obj	5131f0d21fc38648
 181	3653	7531194545671969	CMakeFiles/Lab_3_Zimin.dir/Zimin_Lab.cpp.obj	55c74abc314cdc95
 21	70	0	CMakeFiles/clean.additional	baedbe210acaa455
 72	89	0	clean	423d399e6810f01
-40	238	7542233625072956	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-40	238	7542233625072956	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-40	238	7542233625072956	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-40	238	7542233625072956	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-252	5141	7542233680088859	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
-5141	5381	7542233682215404	Lab_3_Zimin.exe	5d9ae2028bc06d8d
-35	220	7542234172850743	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-35	220	7542234172850743	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-35	220	7542234172850743	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-35	220	7542234172850743	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-233	5182	7542234225197949	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
-5182	5426	7542234227239951	Lab_3_Zimin.exe	5d9ae2028bc06d8d
-22	202	7542235550173255	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-22	202	7542235550173255	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-22	202	7542235550173255	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
-22	202	7542235550173255	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
-215	4732	7542235627902541	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
-4732	4958	7542235629777092	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+35	195	7543191801545115	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+35	195	7543191801545115	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+35	195	7543191801545115	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+35	195	7543191801545115	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+207	3984	7543191856171841	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+3984	4192	7543191857968194	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+33	186	7543192676780886	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+33	186	7543192676780886	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+33	186	7543192676780886	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+33	186	7543192676780886	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+198	4022	7543192730060458	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+4022	4224	7543192731734078	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+31	176	7543193410170753	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+31	176	7543193410170753	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+31	176	7543193410170753	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+31	176	7543193410170753	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+188	3787	7543193471143570	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+3787	3977	7543193472758362	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+32	179	7543193813786008	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+32	179	7543193813786008	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+32	179	7543193813786008	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+32	179	7543193813786008	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+191	4028	7543193864605634	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+4028	4239	7543193866416458	Lab_3_Zimin.exe	5d9ae2028bc06d8d
+28	156	7543194368833067	Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+28	156	7543194368833067	Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+28	156	7543194368833067	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/timestamp	472f8c9d0f34e25e
+28	156	7543194368833067	C:/Qt Projects/Lab_3_Zimin/build/Desktop_Qt_6_8_0_MSVC2022_64bit-Debug/Lab_3_Zimin_autogen/mocs_compilation.cpp	472f8c9d0f34e25e
+167	3586	7543194464597446	CMakeFiles/Lab_3_Zimin.dir/EditDialog.cpp.obj	6d2256d1e4beb77a
+3587	3784	7543194466287850	Lab_3_Zimin.exe	5d9ae2028bc06d8d

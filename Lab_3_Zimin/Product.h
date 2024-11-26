@@ -14,14 +14,15 @@ protected:
 	std::string name = "";
 	std::string manufacturer = "";
 	float price = 0;
-	unsigned int id;
-	static unsigned int MaxId;
+    unsigned int id = 0;
+    static unsigned int MaxId;
 
     template<class Archive>
     void serialize(Archive& ar, const unsigned int version);
 
 public:
     Zimin_Product();
+    Zimin_Product(QString name, QString manufacturer, float price);
     // Zimin_Product(const Zimin_Product& other);
     virtual ~Zimin_Product() = default;
 
@@ -37,6 +38,7 @@ public:
     void setName(const QString name);
     void setManufacturer(const QString manufacturer);
     void setPrice(const float price);
+
 };
 
 #endif

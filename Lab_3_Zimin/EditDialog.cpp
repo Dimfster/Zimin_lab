@@ -12,6 +12,22 @@ EditDialog::EditDialog(QWidget *parent, Zimin_Manager manager)
     {
         ui->listWidget->addItem(p->getParameters()[1]);
     }
+
+    ui->labelName->setVisible(false);
+    ui->labelManufacor->setVisible(false);
+    ui->labelPrice->setVisible(false);
+    ui->lineEditName->setVisible(false);
+    ui->lineEditManufactor->setVisible(false);
+    ui->lineEditPrice->setVisible(false);
+
+    ui->labelCategory->setVisible(false);
+    ui->labelWeight->setVisible(false);
+    ui->labelBattery->setVisible(false);
+
+    ui->lineEditCategory->setVisible(false);
+    ui->lineEditWeight->setVisible(false);
+    ui->checkBoxBattery->setVisible(false);
+
     ui->listWidget->setCurrentRow(manager.getProducts().size() - 1);
 }
 
@@ -23,15 +39,64 @@ EditDialog::~EditDialog()
 void EditDialog::on_addProduct_clicked()
 {
     manager.createProduct();
-    ui->listWidget->addItem("");
+    ui->listWidget->addItem("Новый продукт");
+    ui->listWidget->setCurrentRow(manager.getProducts().size() - 1);
+}
+
+void EditDialog::on_addElectronics_clicked()
+{
+    manager.createElectronic();
+    ui->listWidget->addItem("Новая электроника");
     ui->listWidget->setCurrentRow(manager.getProducts().size() - 1);
 }
 
 
+void EditDialog::on_delete_2_clicked()
+{
+    int currentRow = ui->listWidget->currentRow();
+    if(currentRow < 0)
+        return;
+
+    int nextRow = currentRow == manager.getProducts().size() - 1 ? currentRow - 1: currentRow;
+
+    QListWidgetItem* item = ui->listWidget->takeItem(currentRow);
+    delete item;
+
+    auto p = manager.getProducts()[currentRow];
+    manager.deleteProduct(p);
+
+    ui->listWidget->setCurrentRow(nextRow);
+
+
+}
+
 void EditDialog::on_listWidget_currentRowChanged(int currentRow)
 {
-    if(currentRow < 0 || currentRow >= manager.getProducts().size())
+    if(currentRow < 0 || currentRow >= manager.getProducts().size()){
+        ui->labelName->setVisible(false);
+        ui->labelManufacor->setVisible(false);
+        ui->labelPrice->setVisible(false);
+        ui->lineEditName->setVisible(false);
+        ui->lineEditManufactor->setVisible(false);
+        ui->lineEditPrice->setVisible(false);
+
+        ui->labelCategory->setVisible(false);
+        ui->labelWeight->setVisible(false);
+        ui->labelBattery->setVisible(false);
+
+        ui->lineEditCategory->setVisible(false);
+        ui->lineEditWeight->setVisible(false);
+        ui->checkBoxBattery->setVisible(false);
         return;
+    }
+    else{
+        ui->labelName->setVisible(true);
+        ui->labelManufacor->setVisible(true);
+        ui->labelPrice->setVisible(true);
+        ui->lineEditName->setVisible(true);
+        ui->lineEditManufactor->setVisible(true);
+        ui->lineEditPrice->setVisible(true);
+    }
 
     auto parameters = manager.getProducts()[currentRow]->getParameters();
 
@@ -63,14 +128,6 @@ void EditDialog::on_listWidget_currentRowChanged(int currentRow)
         ui->lineEditWeight->setVisible(false);
         ui->checkBoxBattery->setVisible(false);
     }
-}
-
-
-void EditDialog::on_addElectronics_clicked()
-{
-    manager.createElectronic();
-    ui->listWidget->addItem("");
-    ui->listWidget->setCurrentRow(manager.getProducts().size() - 1);
 }
 
 
@@ -163,23 +220,7 @@ void EditDialog::on_checkBoxBattery_checkStateChanged(const Qt::CheckState &arg1
 }
 
 
-void EditDialog::on_delete_2_clicked()
-{
-    int currentRow = ui->listWidget->currentRow();
-    if(currentRow < 0)
-        return;
 
-    int nextRow = currentRow == manager.getProducts().size() - 1 ? currentRow - 1: currentRow;
-
-    QListWidgetItem* item = ui->listWidget->takeItem(currentRow);
-    delete item;
-
-    auto p = manager.getProducts()[currentRow];
-    manager.deleteProduct(p);
-
-
-    ui->listWidget->setCurrentRow(nextRow);
-}
 
 
 

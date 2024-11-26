@@ -26,6 +26,7 @@ public:
     void setWeight(const float weight);
 
     Electronics() {}
+    Electronics(QString device_type, bool has_battery, double weight);
     // Electronics(const Electronics& other);
     virtual ~Electronics() {}
 

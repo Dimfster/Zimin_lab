@@ -43,6 +43,14 @@ void Electronics::setWeight(const float weight)
     this->weight = weight;
 }
 
+Electronics::Electronics(QString device_type, bool has_battery, double weight)
+    : Zimin_Product("Новая электроника","Неизвестен", 0)
+    , device_type(device_type.toLocal8Bit())
+    , has_battery(has_battery)
+    , weight(weight)
+{
+}
+
 // Electronics::Electronics(const Electronics &other)
 // {
 //     if (this != &other) {  // Проверка на самоприсваивание
