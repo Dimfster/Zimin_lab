@@ -55,7 +55,6 @@ namespace Zimin_Lab5
                 Console.WriteLine("Товаров для очистки нет!");
                 return;
             }
-
             Products.Clear();
             Console.WriteLine("Товары очищены успешно!");
         }
@@ -75,11 +74,11 @@ namespace Zimin_Lab5
             try
             {
                 Directory.CreateDirectory("Saves"); // Создать папку, если её нет.
-                using (var writer = new StreamWriter(fullPath))
-                {
-                    var serializer = new XmlSerializer(typeof(List<ZiminProduct>), new Type[] { typeof(Electronics) });
-                    serializer.Serialize(writer, Products);
-                }
+
+                using var writer = new StreamWriter(fullPath);
+                var serializer = new XmlSerializer(typeof(List<ZiminProduct>), new Type[] { typeof(Electronics) });
+                serializer.Serialize(writer, Products);
+
                 Console.WriteLine("Успешно сохранено!");
             }
             catch (Exception ex)
@@ -120,6 +119,8 @@ namespace Zimin_Lab5
                     var serializer = new XmlSerializer(typeof(List<ZiminProduct>), new Type[] { typeof(Electronics) });
                     Products = (List<ZiminProduct>)serializer.Deserialize(reader);
                 }
+
+                ZiminProduct.ResetMaxId(Products);
                 Console.WriteLine("Файл успешно загружен!");
             }
             catch (Exception ex)

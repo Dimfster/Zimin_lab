@@ -11,7 +11,7 @@ namespace Zimin_Lab5
 
             while (true)
             {
-                Console.Clear();
+                //Console.Clear();
                 Console.WriteLine("Выберите действие:");
                 Console.WriteLine("1. Ввести данные о товаре");
                 Console.WriteLine("2. Ввести данные о электронике");

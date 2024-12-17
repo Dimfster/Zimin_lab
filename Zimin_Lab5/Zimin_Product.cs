@@ -20,12 +20,18 @@ namespace Zimin_Lab5
 
         public ZiminProduct()
         {
-            Id = MaxId++;
+            //Id = MaxId++;
             //Console.WriteLine("Создал продукт :)");
         }
+        public static void ResetMaxId(List<ZiminProduct> data)
+        {
+            MaxId = data.Max(p => p.Id) + 1;
+        }
+
 
         public virtual void WriteInfo()
         {
+            Id = MaxId++;
             Console.WriteLine("Введите название продукта:");
             Name = Console.ReadLine()?.Trim() ?? string.Empty;
 
@@ -46,7 +52,8 @@ namespace Zimin_Lab5
 
         //~ZiminProduct()
         //{
-        //    Console.WriteLine("Удалил продукт :)");
+        //    ResetMaxId();
+        //    //Console.WriteLine("Удалил продукт :)");
         //}
     }
 }
