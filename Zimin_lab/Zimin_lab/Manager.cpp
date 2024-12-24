@@ -54,10 +54,6 @@ void Zimin_Manager::saveZimin_Products() {
 		ofstream fout;
 		fout.open(name, ios::out);
 		boost::archive::text_oarchive ar(fout);
-		//ar << products.size();
-		//for (auto product : products){
-		//	ar << product;
-		//}
 		ar << products;
 		fout.close();
 		cout << "Успешно сохранено!" << endl;
@@ -82,13 +78,6 @@ void Zimin_Manager::loadZimin_Products() {
 	ifstream fin;
 	fin.open(names[save - 1]);
 	boost::archive::text_iarchive ar(fin);
-	/*size_t n;*/
-	/*ar >> n;*/
-	//for (int i = 0; i < n; ++i){
-	//	shared_ptr<Zimin_Product> p;
-	//	ar >> p;
-	//	products.push_back(p);
-	//}
 	ar >> products;
 	fin.close();
 	cout << "Файл загружен!\n" << endl;
@@ -102,4 +91,3 @@ Zimin_Manager::~Zimin_Manager() {
 	//clearZimin_Products();
 	cout << "Менеджер ушёл домой :)" << endl;
 }
-
