@@ -51,6 +51,7 @@ namespace Zimin_Lab6
 
                 if (!string.IsNullOrEmpty(filename))
                 {
+                    manager.ClearZiminProducts();
                     LoadFileToGrid(filename);
                 }
             }
@@ -151,7 +152,5 @@ namespace Zimin_Lab6
                 PopulateGrid();
             }
         }
-
-
     }
 }
